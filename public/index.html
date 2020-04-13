@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.69.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Diversity analysis of DNA metabarcoding data By Antton Alberdi &amp; Ostaizka Aizpurua, University of Copenhagen.
+ Latest update: 12th April 2020
+ Welcome to the Diversity analysis of DNA metabarcoding data electronic book. In this website you will find essential information to understand and perform diversity analyses on different kind of biological systems characterised using DNA metabarcoding or targeted amplicon sequencing approaches. This website is meant to be an open resource for all students and researchers working on diversity analysis of DNA metabarcoding data."><meta property="og:title" content="Introduction" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/" />
+<meta property="og:updated_time" content="2014-09-28T00:00:00+00:00" />
+<title>Introduction | Metabarcoding diversity</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.2d9191914ee9031d630c7f7e96d8662ea6b18e228cd0bce75cea28e489496f28.css" integrity="sha256-LZGRkU7pAx1jDH9&#43;lthmLqaxjiKM0LznXOoo5IlJbyg=">
+<script defer src="/en.search.min.daf152d79f4bf7bf9d32b850b6e313a5b4f6f2f8e2b50628235ca64f9a333045.js" integrity="sha256-2vFS159L97&#43;dMrhQtuMTpbT28vjitQYoI1ymT5ozMEU="></script>
+<link rel="alternate" type="application/rss+xml" href="http://example.org/index.xml" title="Metabarcoding diversity" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dna-metabarcoding/" class="">DNA metabarcoding</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/data-metadata/" class="">Data and metadata</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/abundance-occurrence/" class="">Abundance vs. occurrence data</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/collapsed/" class="collapsed ">Collapsed</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-metrics/" class="">Diversity metrics</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-indices/" class="">Diversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/phylodiversity-indices/" class="">Phylodiversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/hill-numbers/" class="collapsed ">Hill numbers</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/type-correlations/" class="">Type correlations</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-decomposition/" class="">Diversity decomposition</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-partitioning/" class="">Diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-partitioning/phylodiversity-partitioning/" class="">Phylogenetic diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dissimilarity-measurement/" class="">Dissimilarity measurement</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/case-studies/" class="">Case studies</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/ecosystem-diversity/" class="">Ecosystem diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/dietary-diversity/" class="">Dietary diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/microbiome-diversity/" class="">Microbiome diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/authors/" class="">Authors</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/datasets/" class="">Data sets</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/glossary/" class="">Glossary</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/tags/" >
+        Tags
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Introduction</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#examples-and-practical-code">Examples and practical code</a></li>
+    <li><a href="#r-packages">R packages</a></li>
+    <li><a href="#case-studies-and-data-sets">Case studies and data sets</a></li>
+    <li><a href="#tags">Tags</a></li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      <div style="border-bottom:1.2px solid #cecece; margin-bottom:10px; color: #999999;" align="center"><a href="/">Diversity analysis of DNA metabarcoding data</a></div>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+      <div id="breadcrumbs" style="border-left:3px solid #78b3ba; padding:5px; margin-bottom:20px; color:#78b3ba">
+    <a href="/">Home</a>
+    
+        
+    
+        
+    
+</div>
+
+      
+
+      
+  <article class="markdown"><h1 id="diversity-analysis-of-dna-metabarcoding-data">Diversity analysis of DNA metabarcoding data</h1>
+<p>By <a href="docs/authors/"><strong>Antton Alberdi &amp; Ostaizka Aizpurua</strong></a>, University of Copenhagen.</p>
+<blockquote>
+<p><strong>Latest update:</strong> 12th April 2020</p>
+</blockquote>
+<p><img src="/images/butterflies.jpg" alt="Butterflies" /></p>
+<p>Welcome to the <strong>Diversity analysis of DNA metabarcoding data</strong> electronic book. In this website you will find essential information to understand and perform diversity analyses on different kind of biological systems characterised using DNA metabarcoding or targeted amplicon sequencing approaches. This website is meant to be an open resource for all students and researchers working on diversity analysis of DNA metabarcoding data.</p>
+<blockquote class="book-hint info">
+  <strong>The site is under construction</strong><br>
+Note that we are still building the e-book, so you might find some unfinished contents and dead links.
+</blockquote>
+
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li>DNA metabarcoding</li>
+<li>Data and metadata</li>
+<li>Diversity metrics</li>
+<li>Diversity partitioning</li>
+<li>Case studies</li>
+</ol>
+<h2 id="examples-and-practical-code">Examples and practical code</h2>
+<p>This e-book contains hundreds of examples and R codes to learn how to conduct diversity analyses on DNA metabarcoding data.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e">#Create the original &#34;Absolute Prey Abundance Matrix&#34; (APAM) - Figure 1a</span>
+APAM <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cbind</span>(Predator1<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">30</span>),Predator2<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">0</span>),Predator3<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">90</span>,<span style="color:#ae81ff">45</span>,<span style="color:#ae81ff">29</span>,<span style="color:#ae81ff">5</span>))
+<span style="color:#a6e22e">rownames</span>(APAM) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Prey1&#34;</span>,<span style="color:#e6db74">&#34;Prey2&#34;</span>,<span style="color:#e6db74">&#34;Prey3&#34;</span>,<span style="color:#e6db74">&#34;Prey4&#34;</span>)
+APAM
+</code></pre></div><h2 id="r-packages">R packages</h2>
+<p>The proposed exercises require the following R libraries to be installed:</p>
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <ul>
+<li>ggplot2</li>
+</ul>
+
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <ul>
+<li><a href="https://github.com/anttonalberdi/hilldiv">hilldiv</a></li>
+</ul>
+
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <ul>
+<li>vegan</li>
+</ul>
+
+  </div>
+  
+</div>
+
+<h2 id="case-studies-and-data-sets">Case studies and data sets</h2>
+<p>We have included three case studies, one for each type of biological system considered. The data sets required to reproduce the analyses can be found in the <a href="/docs/datasets/">datasets page</a>.</p>
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <h3 id="ecosystem-diversity">Ecosystem diversity</h3>
+<p>Bla bla
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <h3 id="dietary-diversity">Dietary diversity</h3>
+<p>Bla bla
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <h3 id="microbiome-diversity">Microbiome diversity</h3>
+<p>Bla bla
+  </div>
+  
+</div>
+
+<h2 id="tags">Tags</h2>
+<p>Each page in this e-book contains multiple keywords or tags that can be used to find related contents. All the tags used in the e-book are listed in the <a href="tags/">tag page</a>.</p>
+<h2 id="bibliography">Bibliography</h2>
+<p>All the contents are referenced to the original publications through number links like this<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. You will find the list of bibliographical references at the bottom of each page.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Alberdi A, Razgour O, Aizpurua O, Novella-Fernandez R, Aihartza J, Budinski I, Garin I, Ibáñez C, Izagirre E, Rebelo H, Russo D, Vlaschenko A, Zhelyazkova V, Zrncic V, Gilbert MTP. 2020. DNA metabarcoding and spatial modelling link diet diversification with distribution homogeneity in European bats. Nature Communications 11: 1154. <a href="https://doi.org/10.1038/s41467-020-14961-2">https://doi.org/10.1038/s41467-020-14961-2</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+ 
+      <div style="background: #fcfcfc; border-top:1px solid #f4f4f4; padding:5px; margin-top:20px; color:#666666" align="center">2020 CC-by-sa. Antton Alberdi & Ostaizka Aizpurua</div>
+
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#examples-and-practical-code">Examples and practical code</a></li>
+    <li><a href="#r-packages">R packages</a></li>
+    <li><a href="#case-studies-and-data-sets">Case studies and data sets</a></li>
+    <li><a href="#tags">Tags</a></li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Metabarcoding diversity</title>
+    <link>http://example.org/tags/index/</link>
+    <description>Recent content in index on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diversity metrics</title>
+      <link>http://example.org/docs/diversity-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/</guid>
+      <description>Diversity metrics Text to be added.
+Weighing the importance of types Diversity measurements require assignment of an importance value to each of the detected types. In traditional community ecology, this has been done using metrics such as individual counts, biomass or spatial units, depending on the type of system, research question and fieldwork strategy. Molecular analyses provide a different type of data that could provide such information, namely the amount of DNA sequences assigned to each type.</description>
+    </item>
+    
+    <item>
+      <title>Type correlations</title>
+      <link>http://example.org/docs/diversity-metrics/type-correlations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/type-correlations/</guid>
+      <description>Correlations across types The traditional and still most broadly used diversity indices, as well as their corresponding Hill numbers, assume that all types are equally (dis)similar; that is, types are treated as discrete elements with no correlation among them. Such measures have been coined as neutral or species‐neutral measures of diversity (Chao et al., 2010; Marcon &amp;amp; Hérault, 2015). This implies that, for example, a system (e.g., dietary sample) comprised of four Noctua moths (Insecta, Lepidoptera) with even abundances has the same diversity as another system evenly composed of two Noctua moths and two Carabus beetles (Insecta, Coleoptera).</description>
+    </item>
+    
+    <item>
+      <title>Diversity decomposition</title>
+      <link>http://example.org/docs/diversity-metrics/diversity-decomposition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/diversity-decomposition/</guid>
+      <description>Diversity decomposition Text to be added
+Bibliography </description>
+    </item>
+    
+  </channel>
+</rss>

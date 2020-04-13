@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shannon on Metabarcoding diversity</title>
+    <link>http://example.org/tags/shannon/</link>
+    <description>Recent content in shannon on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/shannon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diversity indices</title>
+      <link>http://example.org/docs/diversity-metrics/diversity-indices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/diversity-indices/</guid>
+      <description>Diversity indices Text to be added.
+Shannon index Text to be added1.
+  \( ^1H = -\sum_{i=1}^S(p_i * ln(p_i)) \)  Calculate Shannon index using R #Declare vector of relative frequencies that sums up to 1 pi &amp;lt;- c(0.12,0.34,0.03,0.41,0.10) sum(pi) # 1 #Shannon index using formula -sum(pi*log(pi)) # 1.322237 #Shannon index using hilldiv index_div(pi,index=&amp;#34;shannon&amp;#34;) # 1.322237 #Shannon index using vegan diversity(pi,index=&amp;#34;shannon&amp;#34;) # 1.322237   Simpson index Text to be added.</description>
+    </item>
+    
+    <item>
+      <title>Phylodiversity indices</title>
+      <link>http://example.org/docs/diversity-metrics/phylodiversity-indices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/phylodiversity-indices/</guid>
+      <description>Phylogenetic diversity indices Text to be added.
+Faith&amp;rsquo;s PD Text to be added.
+Allen&amp;rsquo;s H Text to be added.
+Rao&amp;rsquo;s Q Text to be added.
+Bibliography </description>
+    </item>
+    
+    <item>
+      <title>Phylogenetic diversity partitioning</title>
+      <link>http://example.org/docs/diversity-partitioning/phylodiversity-partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-partitioning/phylodiversity-partitioning/</guid>
+      <description>Phylogenetic diversity partitioning Text to be added.
+Bibliography </description>
+    </item>
+    
+    <item>
+      <title>Hill numbers</title>
+      <link>http://example.org/docs/diversity-metrics/hill-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/hill-numbers/</guid>
+      <description>Hill numbers The Hill numbers expression was first discovered by Hill in 19731, hence the use of the name “Hill numbers”. This family of diversity metrics has two major advantages over diversity indices such as Shannon and Simpson:
+ The interpretation of the measure and its measurement unit is always the same. Hill numbers yield diversity measures in “effective number of types”, that is, the number of equally abundant or frequent types that would be needed to give the same value of diversity2.</description>
+    </item>
+    
+  </channel>
+</rss>

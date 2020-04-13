@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>metadata on Metabarcoding diversity</title>
+    <link>http://example.org/tags/metadata/</link>
+    <description>Recent content in metadata on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/metadata/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DNA metabarcoding</title>
+      <link>http://example.org/docs/dna-metabarcoding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/dna-metabarcoding/</guid>
+      <description>DNA metabarcoding DNA sequencing‐based tools are becoming one of the most popular approaches with which to detect and measure biodiversity in a wide range of natural systems1. For example, studies spanning questions from dietary assessments2 to microbiome analyses3 and ecosystem‐level biodiversity studies4 have adopted over the last decade molecular approaches based on metabarcoding. This methodological shift has changed, or at least complemented, the way we measure biodiversity5. For example, operational units for measuring diversity (i.</description>
+    </item>
+    
+    <item>
+      <title>Data and metadata</title>
+      <link>http://example.org/docs/data-metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/data-metadata/</guid>
+      <description>Data and metadata Basic data The basic data object used to compute diversity metrics on DNA metabarcoding data is a two-dimensional matrix, known as observation contingency table, in which columns represent study units, and rows represent types. Usually, this two-dimensional matrix is linked to some basic metadata that establishes relationships across study units (e.g. treatments, species) and types (e.g. taxonomy, phylogenetic similarity). The data matrix and the metadata can be stored in different files or in a single file with enriched data format.</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>http://example.org/docs/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/glossary/</guid>
+      <description>Glosary A B C Contingency table Bla bla
+D E F G H Hill numbers Bla bla
+I J K L M N O P Q R S Shannon index Bla bla
+Simpson index Bla bla
+T U V W X Y Z </description>
+    </item>
+    
+  </channel>
+</rss>

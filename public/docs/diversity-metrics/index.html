@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Diversity metrics Text to be added.
+Weighing the importance of types Diversity measurements require assignment of an importance value to each of the detected types. In traditional community ecology, this has been done using metrics such as individual counts, biomass or spatial units, depending on the type of system, research question and fieldwork strategy. Molecular analyses provide a different type of data that could provide such information, namely the amount of DNA sequences assigned to each type."><meta property="og:title" content="Diversity metrics" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/docs/diversity-metrics/" />
+
+<title>Diversity metrics | Metabarcoding diversity</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.2d9191914ee9031d630c7f7e96d8662ea6b18e228cd0bce75cea28e489496f28.css" integrity="sha256-LZGRkU7pAx1jDH9&#43;lthmLqaxjiKM0LznXOoo5IlJbyg=">
+<script defer src="/en.search.min.daf152d79f4bf7bf9d32b850b6e313a5b4f6f2f8e2b50628235ca64f9a333045.js" integrity="sha256-2vFS159L97&#43;dMrhQtuMTpbT28vjitQYoI1ymT5ozMEU="></script>
+<link rel="alternate" type="application/rss+xml" href="http://example.org/docs/diversity-metrics/index.xml" title="Metabarcoding diversity" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dna-metabarcoding/" class="">DNA metabarcoding</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/data-metadata/" class="">Data and metadata</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/abundance-occurrence/" class="">Abundance vs. occurrence data</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/collapsed/" class="collapsed ">Collapsed</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-metrics/" class="active">Diversity metrics</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-indices/" class="">Diversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/phylodiversity-indices/" class="">Phylodiversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/hill-numbers/" class="collapsed ">Hill numbers</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/type-correlations/" class="">Type correlations</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-decomposition/" class="">Diversity decomposition</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-partitioning/" class="">Diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-partitioning/phylodiversity-partitioning/" class="">Phylogenetic diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dissimilarity-measurement/" class="">Dissimilarity measurement</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/case-studies/" class="">Case studies</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/ecosystem-diversity/" class="">Ecosystem diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/dietary-diversity/" class="">Dietary diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/microbiome-diversity/" class="">Microbiome diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/authors/" class="">Authors</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/datasets/" class="">Data sets</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/glossary/" class="">Glossary</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/tags/" >
+        Tags
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Diversity metrics</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#weighing-the-importance-of-types">Weighing the importance of types</a></li>
+    <li><a href="#correlations-across-types">Correlations across types</a>
+      <ul>
+        <li><a href="#phylogenetic-correlations-across-types">Phylogenetic correlations across types</a></li>
+        <li><a href="#trait-based-correlations-across-types">Trait-based correlations across types</a></li>
+      </ul>
+    </li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      <div style="border-bottom:1.2px solid #cecece; margin-bottom:10px; color: #999999;" align="center"><a href="/">Diversity analysis of DNA metabarcoding data</a></div>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+      <div id="breadcrumbs" style="border-left:3px solid #78b3ba; padding:5px; margin-bottom:20px; color:#78b3ba">
+    <a href="/">Home</a>
+    
+        
+    
+        
+            > <a href="/docs">Docs</a>
+        
+    
+        
+            > <a href="/diversity-metrics">Diversity metrics</a>
+        
+    
+        
+    
+</div>
+
+      
+<div class="tags" style="padding-left:15px">
+
+  <a class="tag-link" href="/tags/diversity">diversity</a>
+
+  <a class="tag-link" href="/tags/index">index</a>
+
+</div>
+
+
+      
+  <article class="markdown"><h1 id="diversity-metrics">Diversity metrics</h1>
+<p>Text to be added.</p>
+<h2 id="weighing-the-importance-of-types">Weighing the importance of types</h2>
+<p>Diversity measurements require assignment of an importance value to each of the detected types. In traditional community ecology, this has been done using metrics such as individual counts, biomass or spatial units, depending on the type of system, research question and fieldwork strategy. Molecular analyses provide a different type of data that could provide such information, namely the amount of DNA sequences assigned to each type.</p>
+<p>The simplest measure of diversity is type <strong>richness</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. As this only considers whether a type is present or absent in the system, abundant and rare types are given the same weight. However, the multiple OTUs present in a system are seldom distributed evenly; thus, richness is rarely the best approach with which to reflect the diversity of a system. Consider for instance, a simple system characterised with 1,000 sequence reads, in which 990 belong to Type1 and 10 to Type2. This would yield a richness value of 2, even though the system is overwhelmingly dominated by Type1. Thus, metrics that also account for the evenness of the system, are considered more representative of the diversity of a system.</p>
+<p>When computing the diversity of biological systems considering both the number of types as well as their relative weights, there are two main possibilities: use traditional <a href="/docs/diversity-metrics/diversity-indices/"><strong>diversity indices</strong></a> such as the Shannon or Simpson indices, or ideally, use <a href="/docs/diversity-metrics/hill-numbers/"><strong>Hill numbers</strong></a>.</p>
+<blockquote>
+<p><a href="/docs/diversity-metrics/diversity-indices/">Diversity indices</a></p>
+</blockquote>
+<blockquote>
+<p><a href="/docs/diversity-metrics/hill-numbers/">Hill numbers</a></p>
+</blockquote>
+<h2 id="correlations-across-types">Correlations across types</h2>
+<p>The traditional and still most broadly used diversity indices, as well as their corresponding Hill numbers, assume that all types are equally (dis)similar; that is, types are treated as discrete elements with no correlation among them. Such measures have been coined as neutral or species‐neutral measures of diversity (Chao et al., 2010; Marcon &amp; Hérault, 2015). This implies that, for example, a system (e.g., dietary sample) comprised of four Noctua moths (Insecta, Lepidoptera) with even abundances has the same diversity as another system evenly composed of two Noctua moths and two Carabus beetles (Insecta, Coleoptera). Obviously, in ecological terms, a system holding moths and beetles is more heterogeneous than a system composed solely of moths. Although ecologists realized this pitfall long before molecular tools were implemented into the study of community ecology (Pielou, 1975), it was only in the last decade that a general framework of non‐ neutral measures of diversities was developed, based on the trait‐based or phylogenetic relations between detected OTUs (Chao, Chiu, et al., 2014a).</p>
+<h3 id="phylogenetic-correlations-across-types">Phylogenetic correlations across types</h3>
+<p>Text to be added.</p>
+<blockquote>
+<p><a href="/docs/data-metadata/abundance-occurrence/">Phylogenetic diversity indices</a></p>
+</blockquote>
+<h3 id="trait-based-correlations-across-types">Trait-based correlations across types</h3>
+<p>Text to be added.</p>
+<h2 id="bibliography">Bibliography</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>McIntosh, R. P. (1967). An index of diversity and the relation of cer‐ tain concepts to diversity. Ecology, 48, 392–404. https://doi. org/10.2307/1932674 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+ 
+      <div style="background: #fcfcfc; border-top:1px solid #f4f4f4; padding:5px; margin-top:20px; color:#666666" align="center">2020 CC-by-sa. Antton Alberdi & Ostaizka Aizpurua</div>
+
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#weighing-the-importance-of-types">Weighing the importance of types</a></li>
+    <li><a href="#correlations-across-types">Correlations across types</a>
+      <ul>
+        <li><a href="#phylogenetic-correlations-across-types">Phylogenetic correlations across types</a></li>
+        <li><a href="#trait-based-correlations-across-types">Trait-based correlations across types</a></li>
+      </ul>
+    </li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hill numbers on Metabarcoding diversity</title>
+    <link>http://example.org/tags/hill-numbers/</link>
+    <description>Recent content in hill numbers on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/hill-numbers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diversity profiles</title>
+      <link>http://example.org/docs/diversity-metrics/hill-numbers/diversity-profiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/hill-numbers/diversity-profiles/</guid>
+      <description>Diversity profiles Bla bla</description>
+    </item>
+    
+    <item>
+      <title>Hill numbers</title>
+      <link>http://example.org/docs/diversity-metrics/hill-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/hill-numbers/</guid>
+      <description>Hill numbers The Hill numbers expression was first discovered by Hill in 19731, hence the use of the name “Hill numbers”. This family of diversity metrics has two major advantages over diversity indices such as Shannon and Simpson:
+ The interpretation of the measure and its measurement unit is always the same. Hill numbers yield diversity measures in “effective number of types”, that is, the number of equally abundant or frequent types that would be needed to give the same value of diversity2.</description>
+    </item>
+    
+  </channel>
+</rss>

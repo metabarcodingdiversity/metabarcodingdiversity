@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hill numbers The Hill numbers expression was first discovered by Hill in 19731, hence the use of the name “Hill numbers”. This family of diversity metrics has two major advantages over diversity indices such as Shannon and Simpson:
+ The interpretation of the measure and its measurement unit is always the same. Hill numbers yield diversity measures in “effective number of types”, that is, the number of equally abundant or frequent types that would be needed to give the same value of diversity2."><meta property="og:title" content="Hill numbers" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/docs/diversity-metrics/hill-numbers/" />
+
+<title>Hill numbers | Metabarcoding diversity</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.2d9191914ee9031d630c7f7e96d8662ea6b18e228cd0bce75cea28e489496f28.css" integrity="sha256-LZGRkU7pAx1jDH9&#43;lthmLqaxjiKM0LznXOoo5IlJbyg=">
+<script defer src="/en.search.min.daf152d79f4bf7bf9d32b850b6e313a5b4f6f2f8e2b50628235ca64f9a333045.js" integrity="sha256-2vFS159L97&#43;dMrhQtuMTpbT28vjitQYoI1ymT5ozMEU="></script>
+<link rel="alternate" type="application/rss+xml" href="http://example.org/docs/diversity-metrics/hill-numbers/index.xml" title="Metabarcoding diversity" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dna-metabarcoding/" class="">DNA metabarcoding</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/data-metadata/" class="">Data and metadata</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/abundance-occurrence/" class="">Abundance vs. occurrence data</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/collapsed/" class="collapsed ">Collapsed</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-metrics/" class="">Diversity metrics</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-indices/" class="">Diversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/phylodiversity-indices/" class="">Phylodiversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/hill-numbers/" class="collapsed active">Hill numbers</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/type-correlations/" class="">Type correlations</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-decomposition/" class="">Diversity decomposition</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-partitioning/" class="">Diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-partitioning/phylodiversity-partitioning/" class="">Phylogenetic diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dissimilarity-measurement/" class="">Dissimilarity measurement</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/case-studies/" class="">Case studies</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/ecosystem-diversity/" class="">Ecosystem diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/dietary-diversity/" class="">Dietary diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/microbiome-diversity/" class="">Microbiome diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/authors/" class="">Authors</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/datasets/" class="">Data sets</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/glossary/" class="">Glossary</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/tags/" >
+        Tags
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Hill numbers</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-hill-numbers-expression">The Hill numbers expression</a></li>
+    <li><a href="#order-of-diversity-q">Order of diversity q</a>
+      <ul>
+        <li><a href="#q0">q=0</a></li>
+        <li><a href="#q1">q=1</a></li>
+        <li><a href="#q2">q=2</a></li>
+      </ul>
+    </li>
+    <li><a href="#effective-number-of-types">Effective number of types</a></li>
+    <li><a href="#relationship-between-hill-numbers-and-diversity-indices">Relationship between Hill numbers and diversity indices</a>
+      <ul>
+        <li><a href="#relationship-with-richness">Relationship with Richness</a></li>
+        <li><a href="#relationship-with-the-shannon-index">Relationship with the Shannon index</a></li>
+        <li><a href="#relationship-with-the-simpson-index">Relationship with the Simpson index</a></li>
+      </ul>
+    </li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      <div style="border-bottom:1.2px solid #cecece; margin-bottom:10px; color: #999999;" align="center"><a href="/">Diversity analysis of DNA metabarcoding data</a></div>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+      <div id="breadcrumbs" style="border-left:3px solid #78b3ba; padding:5px; margin-bottom:20px; color:#78b3ba">
+    <a href="/">Home</a>
+    
+        
+    
+        
+            > <a href="/docs">Docs</a>
+        
+    
+        
+            > <a href="/diversity-metrics">Diversity metrics</a>
+        
+    
+        
+            > <a href="/hill-numbers">Hill numbers</a>
+        
+    
+        
+    
+</div>
+
+      
+<div class="tags" style="padding-left:15px">
+
+  <a class="tag-link" href="/tags/hill-numbers">hill numbers</a>
+
+  <a class="tag-link" href="/tags/richness">richness</a>
+
+  <a class="tag-link" href="/tags/shannon">shannon</a>
+
+  <a class="tag-link" href="/tags/simpson">simpson</a>
+
+  <a class="tag-link" href="/tags/similarity">similarity</a>
+
+  <a class="tag-link" href="/tags/q-value">q-value</a>
+
+  <a class="tag-link" href="/tags/basic-sum">basic sum</a>
+
+</div>
+
+
+      
+  <article class="markdown"><h1 id="hill-numbers">Hill numbers</h1>
+<p>The Hill numbers expression was first discovered by Hill in 1973<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, hence the use of the name “Hill numbers”. This family of diversity metrics has two major advantages over diversity indices such as Shannon and Simpson:</p>
+<ol>
+<li>The interpretation of the measure and its measurement unit is always the same. Hill numbers yield diversity measures in “effective number of types”, that is, the number of equally abundant or frequent types that would be needed to give the same value of diversity<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</li>
+<li>The sensitivity towards abundant and rare types can be modulated with the parameter q, i.e. the order of diversity<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</li>
+</ol>
+<h2 id="the-hill-numbers-expression">The Hill numbers expression</h2>
+
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
+
+<span class="katex">
+  \(
+^qD = (\sum_{i=1}^S{p_i^q})^{(\frac 1 {1-q})}
+\)
+</span>
+
+<blockquote>
+<p>in which pi is XXX, S is XXX and q is XXX</p>
+</blockquote>
+<p>The Hill numbers expression is not defined for q=1, but it is for its limits (e.g. 0.999999). Researchers can therefore opt for using such an approximation, or using this second expression to find the exact value:</p>
+
+
+<span class="katex">
+  \(
+^1D = exp(-\sum_{i=1}^S(p_i * ln(p_i)))
+\)
+</span>
+
+<blockquote class="book-hint warning">
+  <h3 id="computing-hill-numbers-with-r">Computing Hill numbers with R</h3>
+<p>Although the expression might seem complicated, the following R code shows that it is actually rather simple:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>^qvalue)<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>qvalue))
+</code></pre></div><p>Let&rsquo;s see an example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e">#Declare vector of relative frequencies that sums up to 1</span>
+<span style="color:#66d9ef">pi</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.12</span>,<span style="color:#ae81ff">0.34</span>,<span style="color:#ae81ff">0.03</span>,<span style="color:#ae81ff">0.41</span>,<span style="color:#ae81ff">0.10</span>)
+<span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>)
+<span style="color:#75715e"># 1</span>
+
+<span style="color:#75715e">#Declare q-value (modify q-value to the limit of the unity if q=1)</span>
+qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+<span style="color:#a6e22e">if</span>(qvalue <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>){qvalue <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9999999</span>}
+
+<span style="color:#75715e">#Compute Hill number</span>
+<span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>^qvalue)<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>qvalue))
+<span style="color:#75715e"># 3.751806</span>
+</code></pre></div>
+</blockquote>
+
+<h2 id="order-of-diversity-q">Order of diversity q</h2>
+<p>The sensitivity towards abundant/non-abundant (if <a href="/docs/data-metadata/abundance-occurrence/">abundance-based</a>) or frequent/unfrequent (if <a href="/docs/data-metadata/abundance-occurrence/">incidence-based</a>) types can be modulated using the scaling parameter q, known as the “order” of diversity<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. The larger the q value, the higher the importance attributed to abundant or frequent types. Three q values are particularly relevant, both for their significance, and their close relationship to popular diversity indices: q = 0, q = 1 and q = 2.</p>
+<h3 id="q0">q=0</h3>
+<p>When a diversity of order zero (q = 0) is applied to the formula, it becomes insensitive to type frequencies, thus yielding a richness value. As the relative abundances of types are overlooked, rare types are overweighed.</p>
+<blockquote class="book-hint warning">
+  <p>Check how the Hill number of q=0 is identical to the number of types, i.e. type richness.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+<span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>^qvalue)<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>qvalue))
+<span style="color:#75715e"># 5</span>
+<span style="color:#a6e22e">length</span>(<span style="color:#66d9ef">pi</span>)
+<span style="color:#75715e"># 5</span>
+</code></pre></div>
+</blockquote>
+
+<h3 id="q1">q=1</h3>
+<p>A q value of 1 (in practical terms its limit, as the Hill number is undefined for q = 1) is the value that weighs types by their frequency, without disproportionately favouring either rare or abundant ones. The value it yields is exactly the exponential of the Shannon index. In fact, q values under unity favour non-abundant or unfrequent types, while values above one favour abundant or frequent types<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<blockquote class="book-hint warning">
+  <p>Check how the Hill number of q=1 can be obtained by applying a limit of the unity to the Hill number formula, or by computing the exact value. Note that the closer the limit is to the unity the approximation becomes more accurate.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e">#Using the limit approximation</span>
+qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">0.99999999</span>
+<span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>^qvalue)<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>qvalue))
+<span style="color:#75715e"># 3.751806</span>
+
+<span style="color:#75715e">#Computing the exact value</span>
+<span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span><span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">pi</span>)))
+<span style="color:#75715e"># 3.751806</span>
+
+<span style="color:#75715e">#Using the limit approximation with fewer decimals</span>
+qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9999</span>
+<span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>^qvalue)<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>qvalue))
+<span style="color:#75715e"># 3.751883</span>
+</code></pre></div>
+</blockquote>
+
+<h3 id="q2">q=2</h3>
+<p>When a q value of 2 is applied, abundant or frequent types are overweighed, and the formula yields the multiplicative inverse of the Simpson index.</p>
+<blockquote class="book-hint warning">
+  <h3 id="computing-hill-numbers-using-the-r-package-hilldiv">Computing Hill numbers using the R package hilldiv</h3>
+<p>Simple, right?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">hill_div</span>(<span style="color:#66d9ef">pi</span>,qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+<span style="color:#75715e"># 5</span>
+<span style="color:#a6e22e">hill_div</span>(<span style="color:#66d9ef">pi</span>,qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+<span style="color:#75715e"># 4.240513</span>
+<span style="color:#a6e22e">hill_div</span>(<span style="color:#66d9ef">pi</span>,qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<span style="color:#75715e"># 3.751814</span>
+<span style="color:#a6e22e">hill_div</span>(<span style="color:#66d9ef">pi</span>,qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+<span style="color:#75715e"># 3.236246</span>
+</code></pre></div>
+</blockquote>
+
+<h2 id="effective-number-of-types">Effective number of types</h2>
+<p>Content to be added.</p>
+<h2 id="relationship-between-hill-numbers-and-diversity-indices">Relationship between Hill numbers and diversity indices</h2>
+<p>Content to be added.</p>
+<h3 id="relationship-with-richness">Relationship with Richness</h3>
+
+
+<span class="katex">
+  \(
+^0D = ^0H
+\)
+</span>
+
+<h3 id="relationship-with-the-shannon-index">Relationship with the Shannon index</h3>
+
+
+<span class="katex">
+  \(
+^1D = exp(^1H)
+\)
+</span>
+
+<blockquote class="book-hint warning">
+  <p>See how the Hill number of q=1 is the exponential of the Shannon index.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e">#Shannon index using formula</span>
+<span style="color:#f92672">-</span><span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span><span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">pi</span>))
+<span style="color:#75715e">#1.32223</span>
+
+<span style="color:#75715e">#Shannon index using hilldiv</span>
+<span style="color:#a6e22e">index_div</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shannon&#34;</span>)
+<span style="color:#75715e"># 1.3223</span>
+
+<span style="color:#75715e">#Exponential of the Shannon index</span>
+<span style="color:#a6e22e">exp</span>(<span style="color:#a6e22e">index_div</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shannon&#34;</span>))
+<span style="color:#75715e"># 3.7518</span>
+
+<span style="color:#75715e">#Hill number of q=1</span>
+<span style="color:#a6e22e">hill_div</span>(<span style="color:#66d9ef">pi</span>,qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<span style="color:#75715e"># 3.7518</span>
+</code></pre></div>
+</blockquote>
+
+<h3 id="relationship-with-the-simpson-index">Relationship with the Simpson index</h3>
+
+
+<span class="katex">
+  \(
+^2D = 1/(1-^2H)
+\)
+</span>
+
+<blockquote class="book-hint warning">
+  <p>See how the Hill number of q=2 is the multiplicative inverse of the Simpson index.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e">#Simpson index using formula</span>
+<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>^2)
+<span style="color:#75715e"># 0.691</span>
+
+<span style="color:#75715e">#Shannon index using hilldiv</span>
+<span style="color:#a6e22e">index_div</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;simpson&#34;</span>)
+<span style="color:#75715e"># 0.691</span>
+
+<span style="color:#75715e">#Multiplicative inverse of the Simpson index</span>
+<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>(<span style="color:#a6e22e">index_div</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;simpson&#34;</span>)))
+<span style="color:#75715e"># 3.236246</span>
+
+<span style="color:#75715e">#Hill number of q=2</span>
+<span style="color:#a6e22e">hill_div</span>(<span style="color:#66d9ef">pi</span>,qvalue<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+<span style="color:#75715e"># 3.236246</span>
+</code></pre></div>
+</blockquote>
+
+<h2 id="bibliography">Bibliography</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Hill, M. O. (1973). Diversity and evenness: a unifying notation and its con‐ sequences. Ecology, 54, 427–432. <a href="https://doi.org/10.2307/1934352">https://doi.org/10.2307/1934352</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Jost, L. (2006). Entropy and diversity. Oikos, 113, 363–375. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Chao, A., Chiu, C.‐H., &amp; Jost, L. (2014a). Unifying species diversity, phylo‐ genetic diversity, functional diversity, and related similarity and dif‐ ferentiation measures through hill numbers. Annual Review of Ecology Evolution and Systematics, 45, 297–324. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Keylock, C. J. (2005). Simpson diversity and the Shannon‐Wiener index as special cases of a generalized entropy. Oikos, 109, 203–207. <a href="https://doi.org/10.1111/j.0030">https://doi.org/10.1111/j.0030</a>‐1299.2005.13735.x <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+ 
+      <div style="background: #fcfcfc; border-top:1px solid #f4f4f4; padding:5px; margin-top:20px; color:#666666" align="center">2020 CC-by-sa. Antton Alberdi & Ostaizka Aizpurua</div>
+
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-hill-numbers-expression">The Hill numbers expression</a></li>
+    <li><a href="#order-of-diversity-q">Order of diversity q</a>
+      <ul>
+        <li><a href="#q0">q=0</a></li>
+        <li><a href="#q1">q=1</a></li>
+        <li><a href="#q2">q=2</a></li>
+      </ul>
+    </li>
+    <li><a href="#effective-number-of-types">Effective number of types</a></li>
+    <li><a href="#relationship-between-hill-numbers-and-diversity-indices">Relationship between Hill numbers and diversity indices</a>
+      <ul>
+        <li><a href="#relationship-with-richness">Relationship with Richness</a></li>
+        <li><a href="#relationship-with-the-shannon-index">Relationship with the Shannon index</a></li>
+        <li><a href="#relationship-with-the-simpson-index">Relationship with the Simpson index</a></li>
+      </ul>
+    </li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

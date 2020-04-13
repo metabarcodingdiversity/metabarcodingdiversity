@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Data and metadata Basic data The basic data object used to compute diversity metrics on DNA metabarcoding data is a two-dimensional matrix, known as observation contingency table, in which columns represent study units, and rows represent types. Usually, this two-dimensional matrix is linked to some basic metadata that establishes relationships across study units (e.g. treatments, species) and types (e.g. taxonomy, phylogenetic similarity). The data matrix and the metadata can be stored in different files or in a single file with enriched data format."><meta property="og:title" content="Data and metadata" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/docs/data-metadata/" />
+
+<title>Data and metadata | Metabarcoding diversity</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.2d9191914ee9031d630c7f7e96d8662ea6b18e228cd0bce75cea28e489496f28.css" integrity="sha256-LZGRkU7pAx1jDH9&#43;lthmLqaxjiKM0LznXOoo5IlJbyg=">
+<script defer src="/en.search.min.daf152d79f4bf7bf9d32b850b6e313a5b4f6f2f8e2b50628235ca64f9a333045.js" integrity="sha256-2vFS159L97&#43;dMrhQtuMTpbT28vjitQYoI1ymT5ozMEU="></script>
+<link rel="alternate" type="application/rss+xml" href="http://example.org/docs/data-metadata/index.xml" title="Metabarcoding diversity" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dna-metabarcoding/" class="">DNA metabarcoding</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/data-metadata/" class="active">Data and metadata</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/abundance-occurrence/" class="">Abundance vs. occurrence data</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/collapsed/" class="collapsed ">Collapsed</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-metrics/" class="">Diversity metrics</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-indices/" class="">Diversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/phylodiversity-indices/" class="">Phylodiversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/hill-numbers/" class="collapsed ">Hill numbers</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/type-correlations/" class="">Type correlations</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-decomposition/" class="">Diversity decomposition</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-partitioning/" class="">Diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-partitioning/phylodiversity-partitioning/" class="">Phylogenetic diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dissimilarity-measurement/" class="">Dissimilarity measurement</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/case-studies/" class="">Case studies</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/ecosystem-diversity/" class="">Ecosystem diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/dietary-diversity/" class="">Dietary diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/microbiome-diversity/" class="">Microbiome diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/authors/" class="">Authors</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/datasets/" class="">Data sets</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/glossary/" class="">Glossary</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/tags/" >
+        Tags
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Data and metadata</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-data">Basic data</a></li>
+    <li><a href="#study-units">Study units</a>
+      <ul>
+        <li><a href="#sample-units-vs-sample-pools">Sample units vs. sample pools</a></li>
+        <li><a href="#replicates">Replicates</a></li>
+      </ul>
+    </li>
+    <li><a href="#types">Types</a>
+      <ul>
+        <li><a href="#operational-taxonomic-units-otu">Operational Taxonomic Units (OTU)</a></li>
+        <li><a href="#zero-ratius-operational-taxonomic-units-zotu">Zero-ratius Operational Taxonomic Units (ZOTU)</a></li>
+        <li><a href="#amplicon-sequence-variants-asv">Amplicon Sequence Variants (ASV)</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-metadata">Basic metadata</a>
+      <ul>
+        <li><a href="#study-units-metadata">Study units&rsquo; metadata</a></li>
+        <li><a href="#types-metadata">Types&rsquo; metadata</a></li>
+      </ul>
+    </li>
+    <li><a href="#enriched-data-formats">Enriched data formats</a>
+      <ul>
+        <li><a href="#biom-format">BIOM format</a></li>
+        <li><a href="#phyloseq-format">Phyloseq format</a></li>
+      </ul>
+    </li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      <div style="border-bottom:1.2px solid #cecece; margin-bottom:10px; color: #999999;" align="center"><a href="/">Diversity analysis of DNA metabarcoding data</a></div>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+      <div id="breadcrumbs" style="border-left:3px solid #78b3ba; padding:5px; margin-bottom:20px; color:#78b3ba">
+    <a href="/">Home</a>
+    
+        
+    
+        
+            > <a href="/docs">Docs</a>
+        
+    
+        
+            > <a href="/data-metadata">Data metadata</a>
+        
+    
+        
+    
+</div>
+
+      
+<div class="tags" style="padding-left:15px">
+
+  <a class="tag-link" href="/tags/matrix">matrix</a>
+
+  <a class="tag-link" href="/tags/abundance">abundance</a>
+
+  <a class="tag-link" href="/tags/occurrence">occurrence</a>
+
+  <a class="tag-link" href="/tags/metadata">metadata</a>
+
+  <a class="tag-link" href="/tags/biom">biom</a>
+
+</div>
+
+
+      
+  <article class="markdown"><h1 id="data-and-metadata">Data and metadata</h1>
+<h2 id="basic-data">Basic data</h2>
+<p>The basic data object used to compute diversity metrics on DNA metabarcoding data is a two-dimensional matrix, known as observation contingency table, in which columns represent <a href="#study-units"><strong>study units</strong></a>, and rows represent <a href="#types"><strong>types</strong></a>. Usually, this two-dimensional matrix is linked to some <a href="#basic-metadata"><strong>basic metadata</strong></a> that establishes relationships across study units (e.g. treatments, species) and types (e.g. taxonomy, phylogenetic similarity). The data matrix and the metadata can be stored in different files or in a single file with <a href="#enriched-data-formats"><strong>enriched data format</strong></a>.</p>
+<p>The structure of an observation contingency table is as follows:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Unit 1</th>
+<th>Unit 2</th>
+<th>Unit 3</th>
+<th>&hellip;</th>
+<th>Unit n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type 1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Type 2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Type 3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Type n</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>It might contain as many study units as researchers consider, and as many types as detected in the study units.</p>
+<h2 id="study-units">Study units</h2>
+<h3 id="sample-units-vs-sample-pools">Sample units vs. sample pools</h3>
+<h3 id="replicates">Replicates</h3>
+<h2 id="types">Types</h2>
+<p>In community ecology, individuals (i.e., recorded entities) have been traditionally classified into taxonomic species (i.e. types). Therefore, diversity measurements have commonly been carried out at species level (e.g. species richness and species diversity), principally as determined based on morphological features (MacArthur, 1965; Pielou, 1966). The implementation of DNA‐based molecular approaches now enables (in principle) diversity to be measured at a much finer scale—that of DNA sequence variation.</p>
+<p>Although each of the different sequences (recorded entities) could be consid‐ ered a different type (Callahan et al., 2016), usually similar sequences are clustered according to user‐defined similarity thresholds to gen‐ erate OTUs that encompass sequences within a certain degree of similarity (Caporaso et al., 2010; Schloss et al., 2009). One of the aims of clustering is to adjust the defined types to approximately represent biological species, so as to yield diversity measurements that resemble traditional species level analyses (Hebert, Cywinska, Ball, &amp; deWaard, 2003). Typically, an identity value of 97% has been suggested as a standard threshold for considering the average ge‐ netic dissimilarity level across species (Caporaso et al., 2010; Schloss et al., 2009), although clearly this does change across taxa and ge‐ netic marker (Alberdi, Aizpurua, Gilbert, &amp; Bohmann, 2018; Kim, Oh, Park, &amp; Chun, 2014). While clustering is useful for analyses in which intraspecific diversity is largely irrelevant (such as diet assessments), it entails a loss of potentially useful information for most biodiversity analyses (Pavoine &amp; Izsák, 2014), as fine‐scale variation can differen‐ tiate pathogenic from commensal bacterial strains (McElroy, Zagordi, Bull, Luciani, &amp; Beerenwinkel, 2013) or be informative of population structure (Rosen, Davison, Bhaya, &amp; Fisher, 2015), for instance.</p>
+<p>As types can be defined using different algorithms and parameters (Rideout et al., 2014), and the employed approach has a large impact on the results (Alberdi et al., 2018), authors need to provide detailed infor‐ mation (ideally full codes) about the approaches and criteria used to define types in order for studies to be reproducible. If authors publish the raw sequence data, others can choose different criteria to define types and re‐analyse the diversity of a system to ensure comparability.</p>
+<h3 id="operational-taxonomic-units-otu">Operational Taxonomic Units (OTU)</h3>
+<p>Text to be added.</p>
+<h3 id="zero-ratius-operational-taxonomic-units-zotu">Zero-ratius Operational Taxonomic Units (ZOTU)</h3>
+<p>Text to be added.</p>
+<h3 id="amplicon-sequence-variants-asv">Amplicon Sequence Variants (ASV)</h3>
+<p>Text to be added.</p>
+<h2 id="basic-metadata">Basic metadata</h2>
+<p>Text to be added.</p>
+<h3 id="study-units-metadata">Study units&rsquo; metadata</h3>
+<p>Text to be added.</p>
+<h3 id="types-metadata">Types&rsquo; metadata</h3>
+<p>Text to be added.</p>
+<h2 id="enriched-data-formats">Enriched data formats</h2>
+<p>In the field of DNA metabarcoding there are a few enriched data formats.</p>
+<h3 id="biom-format">BIOM format</h3>
+<p>Text to be added.</p>
+<h3 id="phyloseq-format">Phyloseq format</h3>
+<p>Text to be added.</p>
+<h2 id="bibliography">Bibliography</h2>
+</article>
+ 
+      <div style="background: #fcfcfc; border-top:1px solid #f4f4f4; padding:5px; margin-top:20px; color:#666666" align="center">2020 CC-by-sa. Antton Alberdi & Ostaizka Aizpurua</div>
+
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-data">Basic data</a></li>
+    <li><a href="#study-units">Study units</a>
+      <ul>
+        <li><a href="#sample-units-vs-sample-pools">Sample units vs. sample pools</a></li>
+        <li><a href="#replicates">Replicates</a></li>
+      </ul>
+    </li>
+    <li><a href="#types">Types</a>
+      <ul>
+        <li><a href="#operational-taxonomic-units-otu">Operational Taxonomic Units (OTU)</a></li>
+        <li><a href="#zero-ratius-operational-taxonomic-units-zotu">Zero-ratius Operational Taxonomic Units (ZOTU)</a></li>
+        <li><a href="#amplicon-sequence-variants-asv">Amplicon Sequence Variants (ASV)</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-metadata">Basic metadata</a>
+      <ul>
+        <li><a href="#study-units-metadata">Study units&rsquo; metadata</a></li>
+        <li><a href="#types-metadata">Types&rsquo; metadata</a></li>
+      </ul>
+    </li>
+    <li><a href="#enriched-data-formats">Enriched data formats</a>
+      <ul>
+        <li><a href="#biom-format">BIOM format</a></li>
+        <li><a href="#phyloseq-format">Phyloseq format</a></li>
+      </ul>
+    </li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

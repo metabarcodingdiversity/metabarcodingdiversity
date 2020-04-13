@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>abundance on Metabarcoding diversity</title>
+    <link>http://example.org/tags/abundance/</link>
+    <description>Recent content in abundance on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/abundance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data and metadata</title>
+      <link>http://example.org/docs/data-metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/data-metadata/</guid>
+      <description>Data and metadata Basic data The basic data object used to compute diversity metrics on DNA metabarcoding data is a two-dimensional matrix, known as observation contingency table, in which columns represent study units, and rows represent types. Usually, this two-dimensional matrix is linked to some basic metadata that establishes relationships across study units (e.g. treatments, species) and types (e.g. taxonomy, phylogenetic similarity). The data matrix and the metadata can be stored in different files or in a single file with enriched data format.</description>
+    </item>
+    
+    <item>
+      <title>Abundance vs. occurrence data</title>
+      <link>http://example.org/docs/data-metadata/abundance-occurrence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/data-metadata/abundance-occurrence/</guid>
+      <description>Abundance vs. occurrence data The typical output of a metabarcoding pipeline is an observation contingency table containing quantitative information of each type within each unit. Although researchers usually aim for even sequencing depths across study units, all unit are rarely represented by the same number of DNA sequences.
+ An example abundance observation contingency table:
+     Unit 1 Unit 2 Unit 3 &amp;hellip; Unit n     Type 1 2332 34 44332 &amp;hellip; 232   Type 2 0 23423 4433 &amp;hellip; 3242   Type 3 32 3344 0 &amp;hellip; 6855   &amp;hellip;  &amp;hellip; &amp;hellip; &amp;hellip; &amp;hellip;   Type n 3543 0 133 &amp;hellip; 1242   Total 33232 34554 24424 &amp;hellip; 54567     The following R code creates a dummy observation contingency table:</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>http://example.org/docs/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/glossary/</guid>
+      <description>Glosary A B C Contingency table Bla bla
+D E F G H Hill numbers Bla bla
+I J K L M N O P Q R S Shannon index Bla bla
+Simpson index Bla bla
+T U V W X Y Z </description>
+    </item>
+    
+  </channel>
+</rss>
