@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>allen on Metabarcoding diversity</title>
+    <link>http://example.org/tags/allen/</link>
+    <description>Recent content in allen on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/allen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Phylodiversity indices</title>
+      <link>http://example.org/docs/diversity-metrics/phylodiversity-indices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/phylodiversity-indices/</guid>
+      <description>Phylogenetic diversity indices Text to be added.
+Faith&amp;rsquo;s PD Text to be added.
+Allen&amp;rsquo;s H Text to be added.
+Rao&amp;rsquo;s Q Text to be added.
+Bibliography </description>
+    </item>
+    
+    <item>
+      <title>Phylogenetic diversity partitioning</title>
+      <link>http://example.org/docs/diversity-partitioning/phylodiversity-partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-partitioning/phylodiversity-partitioning/</guid>
+      <description>Phylogenetic diversity partitioning Text to be added.
+Bibliography </description>
+    </item>
+    
+  </channel>
+</rss>

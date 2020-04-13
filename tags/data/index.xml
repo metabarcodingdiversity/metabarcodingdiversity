@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data on Metabarcoding diversity</title>
+    <link>http://example.org/tags/data/</link>
+    <description>Recent content in data on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DNA metabarcoding</title>
+      <link>http://example.org/docs/dna-metabarcoding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/dna-metabarcoding/</guid>
+      <description>DNA metabarcoding DNA sequencing‐based tools are becoming one of the most popular approaches with which to detect and measure biodiversity in a wide range of natural systems1. For example, studies spanning questions from dietary assessments2 to microbiome analyses3 and ecosystem‐level biodiversity studies4 have adopted over the last decade molecular approaches based on metabarcoding. This methodological shift has changed, or at least complemented, the way we measure biodiversity5. For example, operational units for measuring diversity (i.</description>
+    </item>
+    
+  </channel>
+</rss>

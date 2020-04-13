@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diversity on Metabarcoding diversity</title>
+    <link>http://example.org/tags/diversity/</link>
+    <description>Recent content in diversity on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/diversity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diversity metrics</title>
+      <link>http://example.org/docs/diversity-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/</guid>
+      <description>Diversity metrics Text to be added.
+Weighing the importance of types Diversity measurements require assignment of an importance value to each of the detected types. In traditional community ecology, this has been done using metrics such as individual counts, biomass or spatial units, depending on the type of system, research question and fieldwork strategy. Molecular analyses provide a different type of data that could provide such information, namely the amount of DNA sequences assigned to each type.</description>
+    </item>
+    
+    <item>
+      <title>Diversity indices</title>
+      <link>http://example.org/docs/diversity-metrics/diversity-indices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/diversity-indices/</guid>
+      <description>Diversity indices Text to be added.
+Shannon index Text to be added1.
+  \( ^1H = -\sum_{i=1}^S(p_i * ln(p_i)) \)  Calculate Shannon index using R #Declare vector of relative frequencies that sums up to 1 pi &amp;lt;- c(0.12,0.34,0.03,0.41,0.10) sum(pi) # 1 #Shannon index using formula -sum(pi*log(pi)) # 1.322237 #Shannon index using hilldiv index_div(pi,index=&amp;#34;shannon&amp;#34;) # 1.322237 #Shannon index using vegan diversity(pi,index=&amp;#34;shannon&amp;#34;) # 1.322237   Simpson index Text to be added.</description>
+    </item>
+    
+    <item>
+      <title>Phylodiversity indices</title>
+      <link>http://example.org/docs/diversity-metrics/phylodiversity-indices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/phylodiversity-indices/</guid>
+      <description>Phylogenetic diversity indices Text to be added.
+Faith&amp;rsquo;s PD Text to be added.
+Allen&amp;rsquo;s H Text to be added.
+Rao&amp;rsquo;s Q Text to be added.
+Bibliography </description>
+    </item>
+    
+    <item>
+      <title>Phylogenetic diversity partitioning</title>
+      <link>http://example.org/docs/diversity-partitioning/phylodiversity-partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-partitioning/phylodiversity-partitioning/</guid>
+      <description>Phylogenetic diversity partitioning Text to be added.
+Bibliography </description>
+    </item>
+    
+    <item>
+      <title>Type correlations</title>
+      <link>http://example.org/docs/diversity-metrics/type-correlations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/type-correlations/</guid>
+      <description>Correlations across types The traditional and still most broadly used diversity indices, as well as their corresponding Hill numbers, assume that all types are equally (dis)similar; that is, types are treated as discrete elements with no correlation among them. Such measures have been coined as neutral or species‐neutral measures of diversity (Chao et al., 2010; Marcon &amp;amp; Hérault, 2015). This implies that, for example, a system (e.g., dietary sample) comprised of four Noctua moths (Insecta, Lepidoptera) with even abundances has the same diversity as another system evenly composed of two Noctua moths and two Carabus beetles (Insecta, Coleoptera).</description>
+    </item>
+    
+    <item>
+      <title>Diversity decomposition</title>
+      <link>http://example.org/docs/diversity-metrics/diversity-decomposition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-metrics/diversity-decomposition/</guid>
+      <description>Diversity decomposition Text to be added
+Bibliography </description>
+    </item>
+    
+  </channel>
+</rss>

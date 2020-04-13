@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Diversity indices Text to be added.
+Shannon index Text to be added1.
+  \( ^1H = -\sum_{i=1}^S(p_i * ln(p_i)) \)  Calculate Shannon index using R #Declare vector of relative frequencies that sums up to 1 pi &lt;- c(0.12,0.34,0.03,0.41,0.10) sum(pi) # 1 #Shannon index using formula -sum(pi*log(pi)) # 1.322237 #Shannon index using hilldiv index_div(pi,index=&#34;shannon&#34;) # 1.322237 #Shannon index using vegan diversity(pi,index=&#34;shannon&#34;) # 1.322237   Simpson index Text to be added."><meta property="og:title" content="Diversity indices" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/docs/diversity-metrics/diversity-indices/" />
+
+<title>Diversity indices | Metabarcoding diversity</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.2d9191914ee9031d630c7f7e96d8662ea6b18e228cd0bce75cea28e489496f28.css" integrity="sha256-LZGRkU7pAx1jDH9&#43;lthmLqaxjiKM0LznXOoo5IlJbyg=">
+<script defer src="/en.search.min.daf152d79f4bf7bf9d32b850b6e313a5b4f6f2f8e2b50628235ca64f9a333045.js" integrity="sha256-2vFS159L97&#43;dMrhQtuMTpbT28vjitQYoI1ymT5ozMEU="></script>
+<link rel="alternate" type="application/rss+xml" href="http://example.org/docs/diversity-metrics/diversity-indices/index.xml" title="Metabarcoding diversity" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dna-metabarcoding/" class="">DNA metabarcoding</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/data-metadata/" class="">Data and metadata</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/abundance-occurrence/" class="">Abundance vs. occurrence data</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/data-metadata/collapsed/" class="collapsed ">Collapsed</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-metrics/" class="">Diversity metrics</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-indices/" class="active">Diversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/phylodiversity-indices/" class="">Phylodiversity indices</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/hill-numbers/" class="collapsed ">Hill numbers</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/type-correlations/" class="">Type correlations</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-metrics/diversity-decomposition/" class="">Diversity decomposition</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/diversity-partitioning/" class="">Diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/diversity-partitioning/phylodiversity-partitioning/" class="">Phylogenetic diversity partitioning</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/dissimilarity-measurement/" class="">Dissimilarity measurement</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/case-studies/" class="">Case studies</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/ecosystem-diversity/" class="">Ecosystem diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/dietary-diversity/" class="">Dietary diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/docs/case-studies/microbiome-diversity/" class="">Microbiome diversity</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/authors/" class="">Authors</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/datasets/" class="">Data sets</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/docs/glossary/" class="">Glossary</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/tags/" >
+        Tags
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Diversity indices</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#shannon-index">Shannon index</a></li>
+    <li><a href="#simpson-index">Simpson index</a></li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      <div style="border-bottom:1.2px solid #cecece; margin-bottom:10px; color: #999999;" align="center"><a href="/">Diversity analysis of DNA metabarcoding data</a></div>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+      <div id="breadcrumbs" style="border-left:3px solid #78b3ba; padding:5px; margin-bottom:20px; color:#78b3ba">
+    <a href="/">Home</a>
+    
+        
+    
+        
+            > <a href="/docs">Docs</a>
+        
+    
+        
+            > <a href="/diversity-metrics">Diversity metrics</a>
+        
+    
+        
+            > <a href="/diversity-indices">Diversity indices</a>
+        
+    
+        
+    
+</div>
+
+      
+<div class="tags" style="padding-left:15px">
+
+  <a class="tag-link" href="/tags/diversity">diversity</a>
+
+  <a class="tag-link" href="/tags/shannon">shannon</a>
+
+  <a class="tag-link" href="/tags/simpson">simpson</a>
+
+</div>
+
+
+      
+  <article class="markdown"><h1 id="diversity-indices">Diversity indices</h1>
+<p>Text to be added.</p>
+<h2 id="shannon-index">Shannon index</h2>
+<p>Text to be added<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
+
+<span class="katex">
+  \(
+^1H = -\sum_{i=1}^S(p_i * ln(p_i))
+\)
+</span>
+
+<blockquote class="book-hint warning">
+  <h3 id="calculate-shannon-index-using-r">Calculate Shannon index using R</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e">#Declare vector of relative frequencies that sums up to 1</span>
+<span style="color:#66d9ef">pi</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.12</span>,<span style="color:#ae81ff">0.34</span>,<span style="color:#ae81ff">0.03</span>,<span style="color:#ae81ff">0.41</span>,<span style="color:#ae81ff">0.10</span>)
+<span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>)
+<span style="color:#75715e"># 1</span>
+
+<span style="color:#75715e">#Shannon index using formula</span>
+<span style="color:#f92672">-</span><span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span><span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">pi</span>))
+<span style="color:#75715e"># 1.322237</span>
+
+<span style="color:#75715e">#Shannon index using hilldiv</span>
+<span style="color:#a6e22e">index_div</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shannon&#34;</span>)
+<span style="color:#75715e"># 1.322237</span>
+
+<span style="color:#75715e">#Shannon index using vegan</span>
+<span style="color:#a6e22e">diversity</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shannon&#34;</span>)
+<span style="color:#75715e"># 1.322237</span>
+</code></pre></div>
+</blockquote>
+
+<h2 id="simpson-index">Simpson index</h2>
+<p>Text to be added.</p>
+<p>
+
+<span class="katex">
+  \(
+^2H = 1-\sum_{i=1}^S(p_i^2)
+\)
+</span>
+
+<blockquote class="book-hint warning">
+  <h3 id="calculate-simpson-index-using-r">Calculate Simpson index using R</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e">#Shannon index using formula</span>
+<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">pi</span>^2)
+<span style="color:#75715e"># 0.691</span>
+
+<span style="color:#75715e">#Shannon index using hilldiv</span>
+<span style="color:#a6e22e">index_div</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;simpson&#34;</span>)
+<span style="color:#75715e"># 0.691</span>
+
+<span style="color:#75715e">#Shannon index using vegan</span>
+<span style="color:#a6e22e">diversity</span>(<span style="color:#66d9ef">pi</span>,index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;simpson&#34;</span>)
+<span style="color:#75715e"># 0.691</span>
+</code></pre></div>
+</blockquote>
+</p>
+<h2 id="bibliography">Bibliography</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Shannon, C. E. (1948). A mathematical theory of communica‐ tion. The Bell System Technical Journal, 27, 379–423. https://doi. org/10.1002/j.1538‐7305.1948.tb01338.x <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+ 
+      <div style="background: #fcfcfc; border-top:1px solid #f4f4f4; padding:5px; margin-top:20px; color:#666666" align="center">2020 CC-by-sa. Antton Alberdi & Ostaizka Aizpurua</div>
+
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#shannon-index">Shannon index</a></li>
+    <li><a href="#simpson-index">Simpson index</a></li>
+    <li><a href="#bibliography">Bibliography</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

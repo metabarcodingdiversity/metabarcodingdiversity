@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>matrix on Metabarcoding diversity</title>
+    <link>http://example.org/tags/matrix/</link>
+    <description>Recent content in matrix on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data and metadata</title>
+      <link>http://example.org/docs/data-metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/data-metadata/</guid>
+      <description>Data and metadata Basic data The basic data object used to compute diversity metrics on DNA metabarcoding data is a two-dimensional matrix, known as observation contingency table, in which columns represent study units, and rows represent types. Usually, this two-dimensional matrix is linked to some basic metadata that establishes relationships across study units (e.g. treatments, species) and types (e.g. taxonomy, phylogenetic similarity). The data matrix and the metadata can be stored in different files or in a single file with enriched data format.</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>http://example.org/docs/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/glossary/</guid>
+      <description>Glosary A B C Contingency table Bla bla
+D E F G H Hill numbers Bla bla
+I J K L M N O P Q R S Shannon index Bla bla
+Simpson index Bla bla
+T U V W X Y Z </description>
+    </item>
+    
+  </channel>
+</rss>

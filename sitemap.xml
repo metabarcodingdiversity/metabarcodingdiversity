@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-metrics/hill-numbers/diversity-profiles/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/dna-metabarcoding/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/case-studies/ecosystem-diversity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/data-metadata/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/case-studies/dietary-diversity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/case-studies/microbiome-diversity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-metrics/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/migrate-from-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/data-metadata/abundance-occurrence/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-metrics/diversity-indices/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-partitioning/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/dissimilarity-measurement/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-metrics/phylodiversity-indices/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-partitioning/phylodiversity-partitioning/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-metrics/hill-numbers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-metrics/type-correlations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/case-studies/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/diversity-metrics/diversity-decomposition/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/data-metadata/collapsed/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/glossary/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/goisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/go/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/templates/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/themes/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/data-metadata/collapsed/3rd-level/4th-level/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/data-metadata/collapsed/3rd-level/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/data-metadata/hidden/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/menu/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/abundance/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/allen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/alpha/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/basic-sum/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/beta/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/biom/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/case-study/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/data/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/design/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/diet/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/dissimilarity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/distance/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/diversity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/ecosystem/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/examples/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/faith/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/gamma/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/hill-numbers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/laboratory/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/matrix/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/metadata/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/microbiome/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/normalisation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/occurrence/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/q-value/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/rao/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/richness/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/sample/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/shannon/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/similarity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/simpson/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/transformation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/tutorial/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Metabarcoding diversity</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>development</title>
+      <link>http://example.org/tags/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>http://example.org/tags/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>http://example.org/tags/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>http://example.org/tags/hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>templates</title>
+      <link>http://example.org/tags/templates/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/templates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>http://example.org/tags/themes/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>abundance</title>
+      <link>http://example.org/tags/abundance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/abundance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>allen</title>
+      <link>http://example.org/tags/allen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/allen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alpha</title>
+      <link>http://example.org/tags/alpha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/alpha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>basic sum</title>
+      <link>http://example.org/tags/basic-sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/basic-sum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>beta</title>
+      <link>http://example.org/tags/beta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/beta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biom</title>
+      <link>http://example.org/tags/biom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/biom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>case study</title>
+      <link>http://example.org/tags/case-study/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/case-study/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data</title>
+      <link>http://example.org/tags/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design</title>
+      <link>http://example.org/tags/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diet</title>
+      <link>http://example.org/tags/diet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/diet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dissimilarity</title>
+      <link>http://example.org/tags/dissimilarity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/dissimilarity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>distance</title>
+      <link>http://example.org/tags/distance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/distance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diversity</title>
+      <link>http://example.org/tags/diversity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/diversity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ecosystem</title>
+      <link>http://example.org/tags/ecosystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/ecosystem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>examples</title>
+      <link>http://example.org/tags/examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/examples/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>faith</title>
+      <link>http://example.org/tags/faith/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/faith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gamma</title>
+      <link>http://example.org/tags/gamma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/gamma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hill numbers</title>
+      <link>http://example.org/tags/hill-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/hill-numbers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>http://example.org/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laboratory</title>
+      <link>http://example.org/tags/laboratory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/laboratory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>matrix</title>
+      <link>http://example.org/tags/matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/matrix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metadata</title>
+      <link>http://example.org/tags/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/metadata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microbiome</title>
+      <link>http://example.org/tags/microbiome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/microbiome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>normalisation</title>
+      <link>http://example.org/tags/normalisation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/normalisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>occurrence</title>
+      <link>http://example.org/tags/occurrence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/occurrence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>q-value</title>
+      <link>http://example.org/tags/q-value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/q-value/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rao</title>
+      <link>http://example.org/tags/rao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/rao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>richness</title>
+      <link>http://example.org/tags/richness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/richness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sample</title>
+      <link>http://example.org/tags/sample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/sample/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shannon</title>
+      <link>http://example.org/tags/shannon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/shannon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>similarity</title>
+      <link>http://example.org/tags/similarity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/similarity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>simpson</title>
+      <link>http://example.org/tags/simpson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/simpson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transformation</title>
+      <link>http://example.org/tags/transformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/transformation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>http://example.org/tags/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

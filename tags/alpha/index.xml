@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>alpha on Metabarcoding diversity</title>
+    <link>http://example.org/tags/alpha/</link>
+    <description>Recent content in alpha on Metabarcoding diversity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/tags/alpha/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diversity partitioning</title>
+      <link>http://example.org/docs/diversity-partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/diversity-partitioning/</guid>
+      <description>Diversity partitioning based on Hill numbers In ecology, the idea of diversity has been traditionally broken down into three components: alpha (α), beta (β) and gamma (γ) diversities1. In general terms, α‐diversity refers to the average diversity of subsystems or samples (although see discussion about the different α‐diversities in Chao, Chiu, &amp;amp; Hsieh, 20122), β‐diversity measures the differences between subsystems (although see discussion about the different β‐diversities in Tuomisto, 20103), while γ‐diversity includes the entire diversity of the system (Figure 5).</description>
+    </item>
+    
+  </channel>
+</rss>
